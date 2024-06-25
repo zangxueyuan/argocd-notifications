@@ -37,7 +37,7 @@ spec:
             tcpSocket:
               port: 9001
           image: argoprojlabs/argocd-notifications:latest
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           name: argocd-notifications-controller
           volumeMounts:
             - name: tls-certs
